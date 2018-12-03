@@ -9,10 +9,10 @@ var usersRouter = require('./routes/users');
 var serveresRouter=require('./routes/serveres'); //服务
 var serveresImgRouter=require('./routes/serveresImg');  //服务图片
 
+var outletUsersRouter = require('./routes/outletUsers');//门店管理人员
 var app = express();
 // 建立数据库连接
 require("./dao/database.js")
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/serveres', serveresRouter);//服务  暴露接口
 app.use('/serveresImg', serveresImgRouter);//服务图片  暴露接口
+app.use('/outletUsers',outletUsersRouter);//门店管理人员
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
