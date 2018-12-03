@@ -1,9 +1,9 @@
 
 
 const mongoose = require("mongoose")
-// require("./model/users.js")
-// require("./model/students.js")
-// require("./model/classes.js")
+require("./model/goods.js")
+require("./model/img.js")
+require("./model/pets.js")
 var dbURI = 'mongodb://localhost/aichongbang';
 
 mongoose.connect(dbURI, { useNewUrlParser: true });
