@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div>
+        <input type="text" id="userAcount" />
+        <input type="text" id="userPwd" />
+    </div>
+    <div>手机<input type="text" id="userPhone" />邮箱<input type="text" id="userMail" /></div>
+    <div>姓名<input type="text" id="userName" /></div>
+    <button id="box">登陆</button><button id="box1">注册</button>
+    <script src="./bin/jquery/jquery-1.12.4.min.js"></script>
+    <script>
+        let userPwd = $("#userPwd").val();
+        let userAcount = $("#userAcount").val();
+        let userPhone = $("#userPhone").val();
+        let userMail = $("#userMail").val();
+        let userName = $("#userName").val();
+        let userType = 1;
+        let userStatus = 1;
+
+        $("#box").click(() => {
+
+            $.ajax({
+                url: '/outletUsers/getAlloutletUsers',
+                type: 'post',
+                data: { userAcount, userPwd },
+                success: function (data) {
+                    console.log(data)
+                }
+            })
+        })
+
+
+
+        $("#box1").click(({ userAcount, userPwd, userPhone, userMail, userName, userType, userStatus }) => {
+            $.ajax({
+                url: "/outletUsers/regOutlet",
+                type: "post",
+                data: {
+                    userAcount, userPwd, userPhone, userMail, userName, userType, userStatus
+                },
+                success(data) {
+                    console.log(data)
+                }
+            })
+        })
+
+            // export default class outletUsers {
+            //     //登陆
+
+            //     // 注册
+            //     async regOutletAsync(userAcount, userPwd, userPhone, userMail, userType, userStatus) {
+            //         return await Promise(() => {
+            //             $.ajax({
+            //                 url: "/outletUsers/regOutlet",
+            //                 type: "post",
+            //                 data: {
+            //                     userAcount: userAcount, userPwd: userPwd, userPhone: userPhone,
+            //                     userMail: userMail, userType: userType, userStatus: userStatus
+            //                 },
+            //                 success(data) {
+            //                     if (data) {
+            //                         console.log(data);
+
+            //                     }
+            //                 }
+            //             })
+            //         })
+            //     }
+            // }
+    </script>
+
+</body>
+
+</html>
