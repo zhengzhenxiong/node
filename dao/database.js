@@ -1,9 +1,14 @@
 
-
 const mongoose = require("mongoose")
 require("./model/goods.js")
 require("./model/img.js")
 require("./model/pets.js")
+require("./model/serveres.js");   //服务
+require("./model/serveresImg.js"); //服务图片
+
+// require("./model/users.js")
+// require("./model/students.js")
+require("./model/outletUsers.js")//门店管理人员
 var dbURI = 'mongodb://localhost/aichongbang';
 
 mongoose.connect(dbURI, { useNewUrlParser: true });

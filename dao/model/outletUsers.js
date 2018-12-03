@@ -9,16 +9,19 @@ var OutletUserSchema = new Schema({
         type: String
     },
     userPhone: {
-        type: Number
+        type: String
     },
     userMail: {
         type: String
+    },
+    userName:{
+        type:String
     },
     userType: {
         type: String
     },
     userStatus:{
-        type:Number
+        type:String
     }
 })
 mongoose.model("outletUsers",OutletUserSchema,"outletUsers")
