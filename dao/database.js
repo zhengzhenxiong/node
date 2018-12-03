@@ -1,9 +1,8 @@
 
-
 const mongoose = require("mongoose")
-// require("./model/users.js")
-// require("./model/students.js")
-// require("./model/classes.js")
+require("./model/serveres.js");   //服务
+require("./model/serveresImg.js"); //服务图片
+
 var dbURI = 'mongodb://localhost/aichongbang';
 
 mongoose.connect(dbURI, { useNewUrlParser: true });

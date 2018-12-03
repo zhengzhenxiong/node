@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var serveresRouter=require('./routes/serveres'); //服务
+var serveresImgRouter=require('./routes/serveresImg');  //服务图片
 
 var app = express();
 // 建立数据库连接
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/serveres', serveresRouter);//服务  暴露接口
+app.use('/serveresImg', serveresImgRouter);//服务图片  暴露接口
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
