@@ -1,0 +1,346 @@
+
+.maintop{
+    height: 376px;
+    background-color: #392f59;
+    position: relative;
+}
+.maintop_t{
+    width: 1200px;
+    margin: auto;
+}
+/* 电影名称介绍 */
+.movieName{
+    margin: 80px 0 0 350px;
+    color: white;
+    float: left;
+    position: relative;
+}
+.movieName h1{
+    font-size: 20px;
+}
+.movieName p{
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+#englishName{
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+/* 想看，评分 */
+.movieName input{
+    width: 120px;
+    height: 36px;
+    background-color: #756189;
+    color: white;
+    border: none;
+   
+}
+.btn2{
+    position: relative;
+    margin:35px 0 0px 0;
+}
+.movieName i{
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background-image: url("../clientPage/img/xk.png");
+    position: absolute;
+    bottom: 8px;
+    left: 35px;
+}
+.movieName b{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../clientPage/img/pf.png");
+    position: absolute;
+    bottom: 8px;
+    right: 68px;
+}
+#wantsee{
+    margin-right: 10px;
+}
+/* 右边部分，评分成绩 */
+.movieRight{
+    width: 336px;
+    height: 100px;
+    float: right;
+    margin: 160px 32px 0 0;
+}
+.movieScore{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.movieScore>div{
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #302649;
+}
+.number{
+    font-size: 10px;
+}
+.score{
+    font-size: 20px;
+    color: #ffc600;
+    margin: 26px 0 8px 0;
+}
+.total{
+    margin-top: 36px;
+}
+.movieScore b{
+    font-size: 14px;
+    padding: 4px 7px;
+    background-color: #ef4238;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
+/* 购票 */
+#buy{
+    width: 100px;
+    height: 26px;
+    background-color:#df2d2d; 
+    border: none;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    margin: auto;
+    position: relative;
+    left: 118px;
+    text-decoration: none;
+}
+
+#buyA{
+    width: 253px;
+    height: 36px;
+    background-color:#df2d2d; 
+    border: none;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* 左边图片 */
+.moviePic{
+    width: 232px;
+    height: 322px;
+    position: absolute;
+    bottom: -20px;
+    left: 110px;
+    border: 2px solid white;
+    box-shadow: 0 30px  #f5f5f5;
+    z-index: 99;
+}
+/* 下方空白 */
+.mainBottom_t{
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    position: absolute;
+    top:-30px;
+}
+/*  */
+.mainBottom{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.mainBottom_l{
+    width: 730px;
+    font-size: 14px;
+}
+.mainBottom_r{
+    width: 360px;
+}
+.mainbottom_b{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.movieInfo{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eeeeee;
+}
+.movieInfo>a{
+    padding-bottom: 10px;
+    margin-right: 28px;
+    font-size: 18px;
+}
+.movieInfo>a:hover{
+    color: red;
+    border-bottom:  2px solid red;
+}
+.title{
+    height: 26px;
+    margin: 40px 0 30px 0;
+}
+h2{
+    font-size: 20px;
+    padding-left: 6px;
+    font-weight: normal;
+    border-left: 4px solid red;
+    display: inline-block;
+}
+.contentSuggest{
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+/* 全部 */
+.all{
+  float: right;
+  color: #999999;
+}
+.all>span{
+    font-family: simsun;
+}
+/* 导演演员 */
+.mainBottom_l ul{
+    display: flex;
+    justify-content: space-between;
+}
+.mainBottom_l ul>li{
+    width: 129px;
+    text-align: center;
+    margin-top: 16px;
+}
+.names{
+    margin-top: 14px;
+}
+.cast a{
+    font-size: 16px;
+}
+.cast a:first-child{
+    margin-right: 130px;
+}
+.role{
+    font-size: 12px;
+    color: #6695cf;
+}
+/* 剧照 */
+.still>div{
+    float: left;
+}
+#bigStill{
+    /* width: 466px; */
+    margin-right: 6px;
+}
+#smallStill{
+    width: 256px;
+}
+#smallStill>div{
+    width: 126px;
+    height: 126px;
+    float: left;
+}
+#smallStill>div:nth-child(2),#smallStill>div:last-child{
+    margin-left: 4px;
+}
+#smallStill>div:nth-child(2),#smallStill>div:first-child{
+    margin-bottom: 4px;
+}
+
+/* 评论 */
+/* 评论头部 */
+.redAll{
+    font-size: 12px;
+    color: red;
+    padding:4px 10px;
+    border: 1px solid red;
+    border-radius: 45px;
+}
+/* 评论部分 */
+.headPhoto{
+    width: 53px;
+    height: 200px;
+}
+.commentRight{
+    width: 660px;
+    height: 200px;
+    border-bottom:1px solid #e5e5e5;
+}
+.comment{
+    display: flex;
+    justify-content: space-between;
+}
+.user{
+    margin: 6px 0;
+}
+.like{
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+    color: #a5c2eb;
+}
+.commentContent{
+    margin: 30px 0;
+    font-size: 12px;
+    color: #666666;
+    line-height: 26px;
+}
+右边
+/* 相关资讯 */
+.rightTitle{
+    margin-top: 0;
+}
+.relatedInfo{
+    margin-bottom: 16px;
+}
+.relatedInfo a{
+    display: flex;
+    justify-content: space-between;
+}
+.relatedInfo div:last-child{
+    width: 210px;
+}
+.infoTitle{
+    font-size: 14px;
+    margin: 6px 0 24px 0;
+}
+.watch{
+    font-size: 12px;
+    color: #999999;
+}
+/* 相关电影 */
+.rightTitle2{
+    margin-top: 60px;
+ }
+.relatedMovie img{
+width: 106px;
+height:147px;
+}
+.relatedMovie>li{
+    float: left;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.relatedMovie>li:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+.movieName2{
+    font-size: 14px;
+    margin: 12px 0 14px 0;
+}
+.score2{
+    color: #ffc600;
+}
+.score2 span{
+font-size: 12px;
+}
+
+.banner {
+    width: 100%;
+    min-width: 1200px;
+    height: 380px;
+    background: url("../clientPage/img/detail-bg.jpg") no-repeat 50%;
+}

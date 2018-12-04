@@ -38,7 +38,7 @@ var OutletsSchema = new Schema({
     shopFeature:{
         type:String
     },
-    //租金
+    //佣金比例
     shopMoney:{
         type:String
     },

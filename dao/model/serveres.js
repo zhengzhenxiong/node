@@ -1,42 +1,38 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
-// 门店管理
+// 服务管理
 var ServerSchema = new Schema({
     //名称
-    serviceName: {
+    serverName: {
         type: String
     },
     //类型
-    serviceType: {
+    serverType: {
         type: String
     },
     //排期
-    serviceSchedule: {
+    serverSchedule: {
         type: String
     },
     //适用规格
-    serviceCanFor: {
+    serverCanFor: {
         type: String
     },
     //服务规格
-    serviceDetial: {
+    serverDetial: {
         type: String
     },
     //耗时
-    serviceTime: {
-        type: String
+    serverTime:{
+        type:String
     },
     //服务员等级
-    serviceLevel: {
-        type: String
+    serverLevel:{
+        type:Number
     },
     //价格
-    servicePrice: {
-        type: String
-    },
-    // 服务图片
-    serviceImg: {
-        type: String
+    serverPrice:{
+        type:Number
     }
 })
-mongoose.model("serveres", ServerSchema, "serveres")
+mongoose.model("serveres",ServerSchema,"serveres")

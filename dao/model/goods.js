@@ -12,7 +12,7 @@ var GoodsSchema = new Schema({
     },
     //材质或制作方法
     goodsMaterial: {
-        type: String
+        type: Number
     },
     //适用规格
     goodsCanFor: {

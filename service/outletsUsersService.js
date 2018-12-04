@@ -1,13 +1,9 @@
+const { getOutletUsersByPage, getOutletUsersById }=require("../dao/outletUsersDao.js");
 
-const {getAlloutletUsers,regOutlet} =require("../dao/outletUsersDao.js")
-
-//增加门店管理
-module.exports.regOutlet = async function (data) {
-    return await regOutlet(data);
-
+module.exports.getOutletUsersByPage = async (page) => {
+    return await getOutletUsersByPage(page);
 }
-// 获取门店管理
-module.exports.getAlloutletUsers = async (use) => {
-    // console.log(use)
-    return await getAlloutletUsers(use)
+
+module.exports.getOutletUsersById = async _id => {
+    return await getOutletUsersById(_id);
 }
